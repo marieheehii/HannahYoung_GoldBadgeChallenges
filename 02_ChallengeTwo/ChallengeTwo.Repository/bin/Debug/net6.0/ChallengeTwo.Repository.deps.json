@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ChallengeTwo.Repository/1.0.0": {
+        "dependencies": {
+          "ChallengeTwo.Data": "1.0.0"
+        },
+        "runtime": {
+          "ChallengeTwo.Repository.dll": {}
+        }
+      },
+      "ChallengeTwo.Data/1.0.0": {
+        "runtime": {
+          "ChallengeTwo.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChallengeTwo.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChallengeTwo.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

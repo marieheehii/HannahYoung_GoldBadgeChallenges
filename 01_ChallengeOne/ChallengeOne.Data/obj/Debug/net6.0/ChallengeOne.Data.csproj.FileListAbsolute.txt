@@ -1,0 +1,12 @@
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\bin\Debug\net6.0\ChallengeOne.Data.deps.json
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\bin\Debug\net6.0\ChallengeOne.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\bin\Debug\net6.0\ChallengeOne.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.csproj.AssemblyReference.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.AssemblyInfoInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.AssemblyInfo.cs
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.csproj.CoreCompileInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\refint\ChallengeOne.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ChallengeOne.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\01_ChallengeOne\ChallengeOne.Data\obj\Debug\net6.0\ref\ChallengeOne.Data.dll

@@ -1,0 +1,12 @@
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\bin\Debug\net6.0\ChallengeTwo.Data.deps.json
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\bin\Debug\net6.0\ChallengeTwo.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\bin\Debug\net6.0\ChallengeTwo.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.csproj.AssemblyReference.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.AssemblyInfoInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.AssemblyInfo.cs
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.csproj.CoreCompileInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\refint\ChallengeTwo.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ChallengeTwo.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\02_ChallengeTwo\ChallengeTwo.Data\obj\Debug\net6.0\ref\ChallengeTwo.Data.dll

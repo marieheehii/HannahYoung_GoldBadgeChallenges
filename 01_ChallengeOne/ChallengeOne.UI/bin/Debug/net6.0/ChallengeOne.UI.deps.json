@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ChallengeOne.UI/1.0.0": {
+        "dependencies": {
+          "ChallengeOne.Data": "1.0.0",
+          "ChallengeOne.Repository": "1.0.0"
+        },
+        "runtime": {
+          "ChallengeOne.UI.dll": {}
+        }
+      },
+      "ChallengeOne.Data/1.0.0": {
+        "runtime": {
+          "ChallengeOne.Data.dll": {}
+        }
+      },
+      "ChallengeOne.Repository/1.0.0": {
+        "dependencies": {
+          "ChallengeOne.Data": "1.0.0"
+        },
+        "runtime": {
+          "ChallengeOne.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChallengeOne.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChallengeOne.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChallengeOne.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

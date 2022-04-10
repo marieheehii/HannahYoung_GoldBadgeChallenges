@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "ChallengeTwo.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ChallengeTwo.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChallengeTwo.Data.dll": {}
+        }
+      },
+      "ChallengeTwo.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ChallengeTwo.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ChallengeTwo.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChallengeTwo.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChallengeTwo.Data/1.0.0": {
+      "type": "project",
+      "path": "../ChallengeTwo.Data/ChallengeTwo.Data.csproj",
+      "msbuildProject": "../ChallengeTwo.Data/ChallengeTwo.Data.csproj"
+    },
+    "ChallengeTwo.Repository/1.0.0": {
+      "type": "project",
+      "path": "../ChallengeTwo.Repository/ChallengeTwo.Repository.csproj",
+      "msbuildProject": "../ChallengeTwo.Repository/ChallengeTwo.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ChallengeTwo.Data >= 1.0.0",
+      "ChallengeTwo.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hanyo\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.UI\\ChallengeTwo.UI.csproj",
+      "projectName": "ChallengeTwo.UI",
+      "projectPath": "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.UI\\ChallengeTwo.UI.csproj",
+      "packagesPath": "C:\\Users\\Hanyo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Hanyo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.Data\\ChallengeTwo.Data.csproj": {
+              "projectPath": "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.Data\\ChallengeTwo.Data.csproj"
+            },
+            "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.Repository\\ChallengeTwo.Repository.csproj": {
+              "projectPath": "C:\\Users\\Hanyo\\OneDrive\\Desktop\\1150 Academy Files\\ElevenFiftyProjects\\codingFoundations\\assignments\\GoldBadgeChallenges\\02_ChallengeTwo\\ChallengeTwo.Repository\\ChallengeTwo.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

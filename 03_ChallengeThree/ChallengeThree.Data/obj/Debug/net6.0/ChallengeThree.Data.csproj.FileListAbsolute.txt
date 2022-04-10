@@ -1,0 +1,12 @@
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\bin\Debug\net6.0\ChallengeThree.Data.deps.json
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\bin\Debug\net6.0\ChallengeThree.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\bin\Debug\net6.0\ChallengeThree.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.csproj.AssemblyReference.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.AssemblyInfoInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.AssemblyInfo.cs
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.csproj.CoreCompileInputs.cache
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\refint\ChallengeThree.Data.dll
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ChallengeThree.Data.pdb
+C:\Users\Hanyo\OneDrive\Desktop\1150 Academy Files\ElevenFiftyProjects\codingFoundations\assignments\GoldBadgeChallenges\03_ChallengeThree\ChallengeThree.Data\obj\Debug\net6.0\ref\ChallengeThree.Data.dll
