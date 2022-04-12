@@ -38,7 +38,7 @@ using System.Threading.Tasks;
                 GetAllMenus();
                 break;
                 case "3":
-                GetMenuByID();
+                ViewMenuByID();
                 break;
                 case "4":
                 RemoveMenuFromDatabase();
@@ -71,22 +71,80 @@ using System.Threading.Tasks;
 
     private void RemoveMenuFromDatabase()
     {
-        throw new NotImplementedException();
+       Console.Clear();
+       System.Console.WriteLine("Test to Delete");
+       PressAnyKeyToContinue();
+
     }
 
-    private void GetMenuByID()
+    private void ViewMenuByID()
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        var menuItem = _mRepo.GetEveryMenu();
+        foreach(Menu menu in menuItem)
+        {
+            DisplayMenu(menu);
+        }
+        try 
+        {
+            System.Console.WriteLine("PLease select a menu ITem by its ID");
+            var userInputSelectedMenuItem = int.Parse(Console.ReadLine());
+            var selectedMenuItem = _mRepo.GetMenuByID(userInputSelectedMenuItem);
+            if (selectedMenuItem != null)
+            {
+                DisplayMenuItemDetails();
+            }
+            else
+            {
+                System.Console.WriteLine($"Sorry the menu item with the id {userInputSelectedMenuItem} doesnt exist. ");
+            }
+        }
+        catch
+        {
+            System.Console.WriteLine("Sorry, invalid selection.");
+        }
+        PressAnyKeyToContinue();
+    }
+
+    private void DisplayMenuItemDetails()
+    {
+        Console.Clear();
+        System.Console.WriteLine($"{selectedMenuItem.ID}{selectedMenuItem.FoodName}\n {selectedMenuItem.Price}\n {selectedMenuItem.Ingredients}");
+
+        PressAnyKeyToContinue();
     }
 
     private void GetAllMenus()
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        System.Console.WriteLine("----Menu---");
+        var menuInDb = _mRepo.GetEveryMenu();
+
+        foreach(var menu in menuInDb)
+        {
+            DisplayMenu(menu);
+        }
+        PressAnyKeyToContinue();
+    }
+
+    private void DisplayMenu(Menu menu)
+    {
+        System.Console.WriteLine("test");
     }
 
     private void AddMenutoDataBase()
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        var newMenu = new Menu();
+        
+        System.Console.WriteLine("Please enter your new Menu Item");
+        newMenu.FoodName = Console.ReadLine();
+        bool hasIngredients = false;
+        while (!hasIngredients)
+        {
+            System.Console.WriteLine("What are the ingridents?");
+            var userInputHasIngredients = Console.ReadLine();
+        }
     }
 
     private void SeedData()
