@@ -57,12 +57,16 @@ using System.Threading.Tasks;
 
     private void PressAnyKeyToContinue()
     {
-        throw new NotImplementedException();
+        System.Console.WriteLine("Press any Key to continue...");
+        Console.ReadKey();
     }
 
     private bool CloseApplication()
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        System.Console.WriteLine("Thanks!");
+        PressAnyKeyToContinue();
+        return false;
     }
 
     private void RemoveMenuFromDatabase()

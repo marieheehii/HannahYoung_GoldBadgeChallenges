@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
     public class HybridCar
     {
+        public HybridCar(){}
+        public HybridCar(string make, string model, int topSpeed, int horsePower, int milesPerGallon)
+        {
+            Make=make;
+            Model=model;
+            TopSpeed=topSpeed;
+            HorsePower=horsePower;
+            MilesPerGallon=milesPerGallon;
+        }
         public string Make { get; set; }
         public string  Model { get; set; }
         public int TopSpeed { get; set; }

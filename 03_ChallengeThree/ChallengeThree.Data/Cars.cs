@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
     public class Cars
     {
+        public Cars(){}
+        public Cars(List<ElectricCar> ElectricCars, List<GasCar> GasCars, List<HybridCar> HybridCars)
+        {
+
+        }
         public List<ElectricCar> ElectricCars {get; set;} = new List<ElectricCar>();
         public List<GasCar> GasCars { get; set; } = new List<GasCar>();
         public List<HybridCar> HybridCars { get; set; } = new List<HybridCar>();
