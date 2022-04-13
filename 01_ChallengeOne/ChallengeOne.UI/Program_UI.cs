@@ -161,11 +161,11 @@ using System.Threading.Tasks;
     
 
     _mRepo.AddMenuToDataBase(GoldenWindBlend);
-    _mRepo.AddMenuToDataBase(GoldenWindBlend);
-    _mRepo.AddMenuToDataBase(GoldenWindBlend);
-    _mRepo.AddMenuToDataBase(GoldenWindBlend);
-    _mRepo.AddMenuToDataBase(GoldenWindBlend);
-    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(BucciaratiCookies);
+    _mRepo.AddMenuToDataBase(NaranciaTarts);
+    _mRepo.AddMenuToDataBase(PannaCotta);
+    _mRepo.AddMenuToDataBase(CaffeLeone);
+    _mRepo.AddMenuToDataBase(CaffeMarocchino);
 
 
 
