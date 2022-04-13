@@ -7,7 +7,7 @@ using System.Threading.Tasks;
     public class Menu
     {
         public Menu(){}
-        public Menu(string foodName, string description, double price, List<Ingredient> ingredients)
+        public Menu(string foodName, string description, double price, string ingredients)
         {
             FoodName = foodName;
             Description = description;
@@ -18,6 +18,6 @@ using System.Threading.Tasks;
         public string FoodName { get; set; }
         public string Description { get; set; }
         public double Price {get; set;}
-        public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+        public string Ingredients { get; set; }
         
     }

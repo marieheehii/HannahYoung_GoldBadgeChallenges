@@ -20,7 +20,7 @@ using System.Threading.Tasks;
                 return false;
             }
         }
-        public List<Menu> GetAllMenus()
+        public List<Menu> GetEveryMenu()
         {
             return _menuDatabase;
         }

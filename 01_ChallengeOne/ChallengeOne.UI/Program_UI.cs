@@ -7,7 +7,6 @@ using System.Threading.Tasks;
     public class Program_UI
     {
       private readonly Menu_Repository _mRepo = new  Menu_Repository();
-      private readonly Ingredient_Repository _iRepo = new  Ingredient_Repository();
       public void Run()
       {
           SeedData();
@@ -35,7 +34,7 @@ using System.Threading.Tasks;
                 AddMenutoDataBase();
                 break;
                 case "2":
-                GetAllMenus();
+                ViewAllMenus();
                 break;
                 case "3":
                 ViewMenuByID();
@@ -80,6 +79,7 @@ using System.Threading.Tasks;
     private void ViewMenuByID()
     {
         Console.Clear();
+        System.Console.WriteLine("----Menu Details---");
         var menuItem = _mRepo.GetEveryMenu();
         foreach(Menu menu in menuItem)
         {
@@ -92,7 +92,7 @@ using System.Threading.Tasks;
             var selectedMenuItem = _mRepo.GetMenuByID(userInputSelectedMenuItem);
             if (selectedMenuItem != null)
             {
-                DisplayMenuItemDetails();
+                DisplayMenuItemDetails(selectedMenuItem);
             }
             else
             {
@@ -106,7 +106,7 @@ using System.Threading.Tasks;
         PressAnyKeyToContinue();
     }
 
-    private void DisplayMenuItemDetails()
+    private void DisplayMenuItemDetails(Menu selectedMenuItem)
     {
         Console.Clear();
         System.Console.WriteLine($"{selectedMenuItem.ID}{selectedMenuItem.FoodName}\n {selectedMenuItem.Price}\n {selectedMenuItem.Ingredients}");
@@ -114,7 +114,7 @@ using System.Threading.Tasks;
         PressAnyKeyToContinue();
     }
 
-    private void GetAllMenus()
+    private void ViewAllMenus()
     {
         Console.Clear();
         System.Console.WriteLine("----Menu---");
@@ -129,7 +129,8 @@ using System.Threading.Tasks;
 
     private void DisplayMenu(Menu menu)
     {
-        System.Console.WriteLine("test");
+        System.Console.WriteLine($"{menu.ID} : {menu.FoodName}\n {menu.Price}" +
+        "-------------------------------");
     }
 
     private void AddMenutoDataBase()
@@ -137,74 +138,41 @@ using System.Threading.Tasks;
         Console.Clear();
         var newMenu = new Menu();
         
-        System.Console.WriteLine("Please enter your new Menu Item");
+        System.Console.WriteLine("Please enter your new Menu Item name");
         newMenu.FoodName = Console.ReadLine();
-        bool hasIngredients = false;
-        while (!hasIngredients)
-        {
-            System.Console.WriteLine("What are the ingridents?");
-            var userInputHasIngredients = Console.ReadLine();
-        }
+       System.Console.WriteLine("Please enter your new Menu Item price. ex: 5.00");
+        newMenu.Price = double.Parse(Console.ReadLine());
+        System.Console.WriteLine("Please enter your new Menu Item description");
+        newMenu.Description = Console.ReadLine();
+        System.Console.WriteLine("Please enter your new Menu Item ingridients seperated by a comma.");
+        newMenu.Ingredients = Console.ReadLine();
+        PressAnyKeyToContinue();
     }
 
     private void SeedData()
     {
-        var water = new Ingredient("water");
-        var coffeeBeans = new Ingredient("coffee beans");
-        var hazelnut = new Ingredient("hazelnut");
-        var brownSugar = new Ingredient("brown sugar");
-        var cocoa = new Ingredient("cocoa");
-        var whippedCream = new Ingredient("whipped cream");
-        var sugar = new Ingredient("sugar");
-        var milk = new Ingredient("milk");
-        var skimMilk = new Ingredient("skim milk");
-        var almondMilk = new Ingredient("almond milk");
-        var coconutWater = new Ingredient("coconut water");
-        var twoPercentMilk = new Ingredient("2% milk");
-        var carmel = new Ingredient("carmel");
-        var fruit = new Ingredient("fruit");
 
-        var GoldenWindBlend = new Menu("Golden Wind Blend", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
-        var BucciaratiCookies= new Menu("BucciaratiCookies", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
-        var NaranciaTarts= new Menu("Narancia Tarts", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
-        var PannaCotta= new Menu("Panna Cotta", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
-        var CaffeLeone= new Menu("Caffe Leone", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
-        var CaffeMarocchino= new Menu("Caffe Marocchino (Espressino", "A light, sweet golden colored blend of smooth coffee", 5.99, new List<Ingredient>
-        {
-            coffeeBeans,
-            water,
-            hazelnut,
-            brownSugar,
-        });
+        var GoldenWindBlend = new Menu("Golden Wind Blend", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var BucciaratiCookies= new Menu("BucciaratiCookies", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var NaranciaTarts= new Menu("Narancia Tarts", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var PannaCotta= new Menu("Panna Cotta","A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var CaffeLeone= new Menu("Caffe Leone", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var CaffeMarocchino= new Menu("Caffe Marocchino (Espressino)", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+    
+
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+    _mRepo.AddMenuToDataBase(GoldenWindBlend);
+
+
+
+
+    /*DateTime time = new DateTime(2022,04,12);
+    System.Console.WriteLine(time.Day);
+    System.Console.WriteLine(time.Month);
+    System.Console.WriteLine(time.Year);*/
     }
 }
