@@ -71,7 +71,30 @@ using System.Threading.Tasks;
     private void RemoveMenuFromDatabase()
     {
        Console.Clear();
-       System.Console.WriteLine("Test to Delete");
+       System.Console.WriteLine("---Menu Item Removal Page---");
+       var allMenuItems = _mRepo.GetEveryMenu();
+       foreach(Menu menu in allMenuItems)
+       {
+           DisplayMenu(menu);
+       }
+       try
+       {
+           System.Console.WriteLine("Please select a Menu Item by it's ID");
+           var userInputSelectedMenuItem = int.Parse(Console.ReadLine());
+           bool isSuccessful = _mRepo.RemoveMenuFromDatabase(userInputSelectedMenuItem);
+           if (isSuccessful)
+           {
+               System.Console.WriteLine($"{userInputSelectedMenuItem} was deleted");
+           }
+           else
+           {
+               System.Console.WriteLine("Deleteing was unsuccessful.");
+           }
+       }
+       catch
+       {
+           System.Console.WriteLine("sorry invalid selection...");
+       }
        PressAnyKeyToContinue();
 
     }
@@ -87,7 +110,7 @@ using System.Threading.Tasks;
         }
         try 
         {
-            System.Console.WriteLine("PLease select a menu ITem by its ID");
+            System.Console.WriteLine("Please select a menu Item by it's ID");
             var userInputSelectedMenuItem = int.Parse(Console.ReadLine());
             var selectedMenuItem = _mRepo.GetMenuByID(userInputSelectedMenuItem);
             if (selectedMenuItem != null)
@@ -109,7 +132,7 @@ using System.Threading.Tasks;
     private void DisplayMenuItemDetails(Menu selectedMenuItem)
     {
         Console.Clear();
-        System.Console.WriteLine($"{selectedMenuItem.ID}{selectedMenuItem.FoodName}\n {selectedMenuItem.Price}\n {selectedMenuItem.Ingredients}");
+        System.Console.WriteLine($"{selectedMenuItem.ID} : {selectedMenuItem.FoodName}\n ${selectedMenuItem.Price}\n made with: {selectedMenuItem.Ingredients}");
 
         PressAnyKeyToContinue();
     }
@@ -117,7 +140,7 @@ using System.Threading.Tasks;
     private void ViewAllMenus()
     {
         Console.Clear();
-        System.Console.WriteLine("----Menu---");
+        System.Console.WriteLine("----JOJOs Cafe Menu---\n");
         var menuInDb = _mRepo.GetEveryMenu();
 
         foreach(var menu in menuInDb)
@@ -129,7 +152,7 @@ using System.Threading.Tasks;
 
     private void DisplayMenu(Menu menu)
     {
-        System.Console.WriteLine($"{menu.ID} : {menu.FoodName}\n {menu.Price}" +
+        System.Console.WriteLine($"{menu.ID} : {menu.FoodName}\n ${menu.Price}\n" +
         "-------------------------------");
     }
 
@@ -146,6 +169,15 @@ using System.Threading.Tasks;
         newMenu.Description = Console.ReadLine();
         System.Console.WriteLine("Please enter your new Menu Item ingridients seperated by a comma.");
         newMenu.Ingredients = Console.ReadLine();
+         bool isSuccessful = _mRepo.AddMenuToDataBase(newMenu);
+        if (isSuccessful)
+        {
+            System.Console.WriteLine($"Menu Item: {newMenu.FoodName} was Added to the Database.");
+        }
+        else
+        {
+            System.Console.WriteLine("Store Failed to be Added to the Database.");
+        }
         PressAnyKeyToContinue();
     }
 
