@@ -1,12 +1,11 @@
-namespace ChallengeTwo.Data
-{
+
     public enum EventType
     {
         Bowling=1,
-        Skiing,
-        Dinner,
-        Golfing,
-        Fundraisers,
-        Volunteering,
+        Skiing = 2,
+        Dinner =3,
+        Golfing=4,
+        Fundraisers=5,
+        Volunteering=6,
     }
-}
+

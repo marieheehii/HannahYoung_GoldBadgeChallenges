@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ChallengeTwo.Data
-{
+
     public class Outings
     {
         public Outings() {}
         public Outings(EventType eventType, int numberAttended, int year, int month, 
-        int day, int eventCostPerPerson, int eventCost)
+        int day, double eventCostPerPerson, double eventCost)
         {
             EventType=eventType;
             NumberAttended=numberAttended;
@@ -24,7 +23,7 @@ namespace ChallengeTwo.Data
         public int Year { get; set; }
         public int Month { get; set; }
         public int Day { get; set; }
-        public int EventCostPerPerson {get; set;}
-        public int EventCost { get; set; }
+        public double EventCostPerPerson {get; set;}
+        public double EventCost { get; set; } 
+        public int ID {get; set;}
     }
-}
