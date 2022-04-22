@@ -42,7 +42,10 @@ using System.Threading.Tasks;
           {
             if(outings.EventType == eventType)
             {
-                 return outings;
+                foreach(Outings outings1 in _outingsDatabase)
+                {
+                    return outings;
+                }
             }
           }
           return null;
@@ -78,5 +81,16 @@ using System.Threading.Tasks;
             return false;
         }
       }
-
+    public double GetTotalCostByEventType(EventType eventType)
+    {
+        double totalCost = 0;
+        foreach(var outing in _outingsDatabase)
+        {
+            if(outing.EventType == eventType)
+            {
+                totalCost += outing.EventCost;
+            }
+        }
+        return totalCost;
+    }
     }

@@ -45,7 +45,11 @@ public class Program_UI
                 CombinedOutingsCostByType();
                 break;
                 case "50":
-                CloseApplicaton();
+                isRunning = CloseApplicaton();
+                break;
+                default:
+                System.Console.WriteLine("Invalid Selection");
+                PressAnyKeyToContinue();
                 break;
             }
         }
@@ -64,26 +68,12 @@ public class Program_UI
         "Volunteering=6\n" +
         "-----------------");
         
-        try
-        {
+        
+        
         System.Console.WriteLine("Please enter the event Type...");
         var userInputSelectedEventType = (EventType)Convert.ToInt32(Console.ReadLine());
-        var selectedEventType = _oRepo.GetOutingsByEventType(userInputSelectedEventType);
-        double PriceSum =0;
-        if (selectedEventType != null)
-        {
-            PriceSum+= selectedEventType.EventCost;
-            System.Console.WriteLine($"Your combined cost for outings of this type is {PriceSum}");
-        }
-        else
-        {
-            System.Console.WriteLine($"Sorry, the event type {userInputSelectedEventType} does not exist.");
-        }
-        }
-        catch
-        {
-            System.Console.WriteLine("Sorry, invalid selection.");
-        }
+        var totalCost = _oRepo.GetTotalCostByEventType(userInputSelectedEventType);
+        System.Console.WriteLine($"{totalCost}");
         PressAnyKeyToContinue();
     }
 
@@ -213,14 +203,30 @@ public class Program_UI
     {
         Console.Clear();
         var newOuting = new Outings();
-        System.Console.WriteLine("Please enter the outing type...");
+        System.Console.WriteLine("Event Types:\n"+
+        "Bowling=1\n" +
+        "Skiing = 2\n" +
+        "Dinner =3\n" +
+        "Golfing=4\n" +
+        "Fundraisers=5\n" +
+        "Volunteering=6\n" +
+        "-----------------\n");
+        
+        System.Console.WriteLine("Please enter the outing type by its Event ID...");
         newOuting.EventType = (EventType)Convert.ToInt32(Console.ReadLine());
+        System.Console.WriteLine("Enter The event Cost:");
         newOuting.EventCost = double.Parse(Console.ReadLine());
+                System.Console.WriteLine("Enter The Event Cost Per Person:");
         newOuting.EventCostPerPerson = double.Parse(Console.ReadLine());
+                System.Console.WriteLine("Enter The number Attended:");
         newOuting.NumberAttended = int.Parse(Console.ReadLine());
+                System.Console.WriteLine("Enter The Month of the Event:");
         newOuting.Month = int.Parse(Console.ReadLine());
+                System.Console.WriteLine("Enter The Day of the Event:");
         newOuting.Day = int.Parse(Console.ReadLine());
+                System.Console.WriteLine("Enter The Year of the Event:");
         newOuting.Year = int.Parse(Console.ReadLine());
+    
 
         bool isSuccessful = _oRepo.AddOutingToDatabase(newOuting);
         if(isSuccessful)
@@ -243,6 +249,7 @@ public class Program_UI
         var golfing = new Outings(EventType.Golfing, 37, 2022, 04, 21, 23.00, 602.99);
 
         _oRepo.AddOutingToDatabase(bowling);
+        _oRepo.AddOutingToDatabase(bowling2);
         _oRepo.AddOutingToDatabase(skiing);
         _oRepo.AddOutingToDatabase(dinner);
         _oRepo.AddOutingToDatabase(golfing);
