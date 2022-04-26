@@ -63,7 +63,7 @@ using System.Threading.Tasks;
     private bool CloseApplication()
     {
         Console.Clear();
-        System.Console.WriteLine("Thanks!");
+        System.Console.WriteLine("Thanks for Visting JOJOs!");
         PressAnyKeyToContinue();
         return false;
     }
@@ -185,11 +185,11 @@ using System.Threading.Tasks;
     {
 
         var GoldenWindBlend = new Menu("Golden Wind Blend", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
-        var BucciaratiCookies= new Menu("BucciaratiCookies", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
-        var NaranciaTarts= new Menu("Narancia Tarts", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
-        var PannaCotta= new Menu("Panna Cotta","A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
-        var CaffeLeone= new Menu("Caffe Leone", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
-        var CaffeMarocchino= new Menu("Caffe Marocchino (Espressino)", "A light, sweet golden colored blend of smooth coffee", 5.99, "coffee beans, water and vanilla");
+        var BucciaratiCookies= new Menu("BucciaratiCookies", "Cookie with a zipper down the middle", 2.99, "egg, sugar, flower, and other cookie things... ");
+        var NaranciaTarts= new Menu("Narancia Tarts", "A deliciously crunchy sweet tart", 3.99, "egg, sugar, flower, and oranges");
+        var PannaCotta= new Menu("Panna Cotta","A light, something cheesy i think...", 5.99, "heat, cheese...?");
+        var CaffeLeone= new Menu("Caffe Leone", "A dark roasted, blend of smoothly burnt coffee", 5.99, "coffee beans, water and hazelnut");
+        var CaffeMarocchino= new Menu("Caffe Marocchino (Espressino)", "A light, bronze colored blend of far too caffinated coffee", 5.99, "coffee beans, water and chaos");
     
 
     _mRepo.AddMenuToDataBase(GoldenWindBlend);
@@ -199,12 +199,5 @@ using System.Threading.Tasks;
     _mRepo.AddMenuToDataBase(CaffeLeone);
     _mRepo.AddMenuToDataBase(CaffeMarocchino);
 
-
-
-
-    /*DateTime time = new DateTime(2022,04,12);
-    System.Console.WriteLine(time.Day);
-    System.Console.WriteLine(time.Month);
-    System.Console.WriteLine(time.Year);*/
     }
 }

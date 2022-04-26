@@ -64,8 +64,8 @@ public class Program_UI
         "Skiing = 2\n" +
         "Dinner =3\n" +
         "Golfing=4\n" +
-        "Fundraisers=5\n" +
-        "Volunteering=6\n" +
+        "AmuesmentParks=5\n" +
+        "Concerts=6\n" +
         "-----------------");
         
         
@@ -73,7 +73,7 @@ public class Program_UI
         System.Console.WriteLine("Please enter the event Type...");
         var userInputSelectedEventType = (EventType)Convert.ToInt32(Console.ReadLine());
         var totalCost = _oRepo.GetTotalCostByEventType(userInputSelectedEventType);
-        System.Console.WriteLine($"{totalCost}");
+        System.Console.WriteLine($"${totalCost}");
         PressAnyKeyToContinue();
     }
 
@@ -87,14 +87,14 @@ public class Program_UI
         {
          PriceSum += outings.EventCost;
         }
-        System.Console.WriteLine($"Your combined cost for all outings is {PriceSum}");
+        System.Console.WriteLine($"Your combined cost for all outings is ${PriceSum}");
         PressAnyKeyToContinue();
     }
 
     private bool CloseApplicaton()
     {
         Console.Clear();
-        System.Console.WriteLine("Thanks!!");
+        System.Console.WriteLine("Thanks for Reviewing the company Outings!!");
         PressAnyKeyToContinue();
         return false;
     }
@@ -174,8 +174,8 @@ public class Program_UI
         Console.Clear();
         System.Console.WriteLine($"Outing ID: {selectedOuting.ID}\n" +
         $"Event Type: {selectedOuting.EventType}\n" +
-        $"Event Cost: {selectedOuting.EventCost}\n" +
-        $"Event Cost Per Person: {selectedOuting.EventCostPerPerson}\n"+
+        $"Event Cost: ${selectedOuting.EventCost}\n" +
+        $"Event Cost Per Person: ${selectedOuting.EventCostPerPerson}\n"+
         $"Number Attended: {selectedOuting.NumberAttended}\n" +
         $"Date: {selectedOuting.Month}/{selectedOuting.Day}/{selectedOuting.Year}\n"+
         "------------------------------------------");
@@ -208,8 +208,8 @@ public class Program_UI
         "Skiing = 2\n" +
         "Dinner =3\n" +
         "Golfing=4\n" +
-        "Fundraisers=5\n" +
-        "Volunteering=6\n" +
+        "Ameusment Parks=5\n" +
+        "Concerts=6\n" +
         "-----------------\n");
         
         System.Console.WriteLine("Please enter the outing type by its Event ID...");
@@ -220,11 +220,11 @@ public class Program_UI
         newOuting.EventCostPerPerson = double.Parse(Console.ReadLine());
                 System.Console.WriteLine("Enter The number Attended:");
         newOuting.NumberAttended = int.Parse(Console.ReadLine());
-                System.Console.WriteLine("Enter The Month of the Event:");
+                System.Console.WriteLine("Enter The Month of the Event in two number format: ex.(05)");
         newOuting.Month = int.Parse(Console.ReadLine());
-                System.Console.WriteLine("Enter The Day of the Event:");
+                System.Console.WriteLine("Enter The Day of the Event in two number format: ex.(05)");
         newOuting.Day = int.Parse(Console.ReadLine());
-                System.Console.WriteLine("Enter The Year of the Event:");
+                System.Console.WriteLine("Enter The Year of the Event in four number format: ex.(05)");
         newOuting.Year = int.Parse(Console.ReadLine());
     
 
@@ -243,14 +243,16 @@ public class Program_UI
     private void SeedData()
     {
         var bowling = new Outings(EventType.Bowling, 37, 2022, 04, 21, 23.00, 602.99);
-        var bowling2 = new Outings(EventType.Bowling, 37, 2022, 04, 21, 23.00, 602.99);
-        var skiing = new Outings(EventType.Skiing, 37, 2022, 04, 21, 23.00, 602.99);
-        var dinner = new Outings(EventType.Dinner, 37, 2022, 04, 21, 23.00, 602.99);
-        var golfing = new Outings(EventType.Golfing, 37, 2022, 04, 21, 23.00, 602.99);
+        var bowling2 = new Outings(EventType.Bowling, 37, 2022, 04, 21, 23.00, 802.99);
+        var skiing = new Outings(EventType.Concert, 37, 2022, 04, 21, 23.00, 1902.99);
+        var ameusmentPark = new Outings(EventType.AmusementPark, 37, 2022, 04, 21, 23.00, 1902.99);
+        var dinner = new Outings(EventType.Dinner, 37, 2022, 04, 21, 23.00, 102.99);
+        var golfing = new Outings(EventType.Golfing, 37, 2022, 04, 21, 23.00, 702.99);
 
         _oRepo.AddOutingToDatabase(bowling);
         _oRepo.AddOutingToDatabase(bowling2);
         _oRepo.AddOutingToDatabase(skiing);
+        _oRepo.AddOutingToDatabase(ameusmentPark);
         _oRepo.AddOutingToDatabase(dinner);
         _oRepo.AddOutingToDatabase(golfing);
 

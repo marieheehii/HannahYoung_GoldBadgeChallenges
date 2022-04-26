@@ -5,7 +5,7 @@
         Skiing = 2,
         Dinner =3,
         Golfing=4,
-        Fundraisers=5,
-        Volunteering=6,
+        AmusementPark=5,
+        Concert=6,
     }
 
