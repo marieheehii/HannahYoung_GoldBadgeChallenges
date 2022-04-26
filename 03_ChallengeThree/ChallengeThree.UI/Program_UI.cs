@@ -66,7 +66,7 @@ using System.Threading.Tasks;
                 ViewCarByID();
                 break;
                 case "50":
-                CloseApplication();
+                isRunning = CloseApplication();
                 break;
                 default:
                 System.Console.WriteLine("Sorry, Invalid selection");
@@ -122,6 +122,7 @@ using System.Threading.Tasks;
         var userSelectedCar = _cRepo.GetCarByID(userInputCarID);
         if(userSelectedCar != null)
         {
+            var removeSelected = _cRepo.RemoveCarFromDatabase(userInputCarID);
             var newCar = new Cars();
         System.Console.WriteLine("Please enter a Car Model");
         newCar.Model = Console.ReadLine();
@@ -139,13 +140,15 @@ using System.Threading.Tasks;
         newCar.IsHybrid = bool.Parse(Console.ReadLine());
         System.Console.WriteLine("True or False? Your car is Gas Powered.");
         newCar.IsGas = bool.Parse(Console.ReadLine());
+        newCar.ID = userSelectedCar.ID;
         bool isSuccessful = _cRepo.AddCarToDatabase(newCar);
         if(isSuccessful)
         {
+
             System.Console.WriteLine($"Your {newCar.Make} {newCar.Model} was updated in the database! ");
         }
         else{
-            System.Console.WriteLine("Car failed to be updated the database...");
+            System.Console.WriteLine("Car failed to be updated in the database...");
         }
         
         }
@@ -204,8 +207,19 @@ using System.Threading.Tasks;
             var selectedCar = _cRepo.GetCarByID(userInputSelectedCar);
             if (selectedCar != null)
             {
-                DisplayCarListings(selectedCar);
-                
+            if(selectedCar.IsElectric == true)
+                {
+                    DisplayElectricCarDetails(selectedCar);
+                }
+                else if(selectedCar.IsGas == true)
+                {
+                    DisplayGasCarDetails(selectedCar);
+                }
+                else
+                {
+                    DisplayHybridCarDetails(selectedCar);
+                }
+                    
             }else{
                 System.Console.WriteLine($"Sorry. the car with the id {userInputSelectedCar} does not exist.");
             }
@@ -341,7 +355,7 @@ using System.Threading.Tasks;
     private bool CloseApplication()
     {
         Console.Clear();
-        System.Console.WriteLine("Thanks!!");
+        System.Console.WriteLine("Thanks for looking at our list of cars even though I dont know car statistics!!");
         PressAnyKeyToContinue();
         return false;
     }
